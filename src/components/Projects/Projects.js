@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 class Projects extends Component {
     render() {
         return (
-            <div className={classes.page}>
+            <div className={classes.page} id="scrollTo--projects">
                 <div className={classes.title}>
                     <div className={classes.titleLine}></div>
                     <div className={classes.titleText}>Projects</div>

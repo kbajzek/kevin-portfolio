@@ -11,17 +11,63 @@ import { Link } from 'react-scroll';
 // const color7 = "#abaeb0";
 
 class Header extends Component {
+
+    state = {
+        hamburgerClicked: false
+    }
+
+    fixHamburgerState = () => {
+        if (window.innerWidth > 768) {
+            this.setState({ hamburgerClicked: false });
+        }
+    }
+
+    componentDidMount() {
+        this.fixHamburgerState();
+        window.addEventListener("resize", this.fixHamburgerState);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.fixHamburgerState);
+    }
+
+    clickHamburger = () => {
+        this.setState({ hamburgerClicked: !this.state.hamburgerClicked });
+    }
+
+    closeHamburger = () => {
+        this.setState({ hamburgerClicked: false });
+    }
+
     render() {
         return (
-            <div className={classes.header}>
-                <div className={classes.headerItems}>
-                    <div className={classes.headerItem}>ABOUT ME</div>
-                    <div className={classes.headerItem}>SKILLS</div>
-                    <div className={classes.headerItem}>PROJECTS</div>
-                    <div className={classes.headerItem}>CONTACT</div>
-                    <div className={classes.resumeItem}>RESUME</div>
+            <header className={classes.header}>
+                <div className={this.state.hamburgerClicked ? classes.backgroundBlur : classes.noBackgroundBlur} onClick={this.closeHamburger}></div>
+                <div className={classes.hamburgerWrapper} onClick={this.clickHamburger}>
+                    <div className={this.state.hamburgerClicked ? classes.hamburgerActive : classes.hamburger}></div>
                 </div>
-            </div>
+                <nav className={this.state.hamburgerClicked ? classes.navbar : classes.navbarClosed}>
+                    <ul className={classes.headerItems}>
+                        <li className={classes.headerItem}>
+                            <Link className={classes.anchor} to="scrollTo--about" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>ABOUT ME</Link>
+                        </li>
+                        <li className={classes.headerItem}>
+                            <Link className={classes.anchor} to="scrollTo--skills" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>SKILLS</Link>
+                        </li>
+                        <li className={classes.headerItem}>
+                            <Link className={classes.anchor} to="scrollTo--projects" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>PROJECTS</Link>
+                        </li>
+                        <li className={classes.headerItem}>
+                            <Link className={classes.anchor} to="scrollTo--contact" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>CONTACT</Link>
+                        </li>
+                    </ul>
+                    <div className={classes.resumeItemWrapper}>
+                        <button className={classes.resumeItem}>
+                            RESUME
+                        </button>
+                    </div>
+                </nav>
+            </header>
         );
     }
 }

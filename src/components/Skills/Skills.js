@@ -4,7 +4,7 @@ import * as classes from './Skills.module.css';
 class Skills extends Component {
     render() {
         return (
-            <div className={classes.page}>
+            <div className={classes.page} id="scrollTo--skills">
                 <div className={classes.title}>
                     <div className={classes.titleLine}></div>
                     <div className={classes.titleText}>Technical Skills</div>

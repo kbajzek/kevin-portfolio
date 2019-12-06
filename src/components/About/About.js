@@ -4,7 +4,7 @@ import * as classes from './About.module.css';
 class About extends Component {
     render() {
         return (
-            <div className={classes.page}>
+            <div className={classes.page} id="scrollTo--about">
                 <div className={classes.title}>
                     <div className={classes.titleLine}></div>
                     <div className={classes.titleText}>About Me</div>

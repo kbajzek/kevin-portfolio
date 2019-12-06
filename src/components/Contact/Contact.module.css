@@ -27,6 +27,10 @@
     margin: 0 5px;
 }
 
+.anchor:hover {
+    color: #86c232;
+}
+
 .title { 
     display: flex; 
     align-items: center; 

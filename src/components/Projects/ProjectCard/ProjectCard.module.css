@@ -29,6 +29,10 @@
     margin: 0 5px;
 }
 
+.anchor:hover {
+    color: #86c232;
+}
+
 .cardContent {
     width: 100%;
     height: 100%;
