@@ -49,22 +49,22 @@ class Header extends Component {
                 <nav className={this.state.hamburgerClicked ? classes.navbar : classes.navbarClosed}>
                     <ul className={classes.headerItems}>
                         <li className={classes.headerItem}>
-                            <Link className={classes.anchor} to="scrollTo--about" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>ABOUT ME</Link>
+                            <Link className={classes.anchor} to="scrollTo--about" href="scrollTo--about" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>ABOUT ME</Link>
                         </li>
                         <li className={classes.headerItem}>
-                            <Link className={classes.anchor} to="scrollTo--skills" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>SKILLS</Link>
+                            <Link className={classes.anchor} to="scrollTo--skills" href="scrollTo--skills" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>SKILLS</Link>
                         </li>
                         <li className={classes.headerItem}>
-                            <Link className={classes.anchor} to="scrollTo--projects" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>PROJECTS</Link>
+                            <Link className={classes.anchor} to="scrollTo--projects" href="scrollTo--projects" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>PROJECTS</Link>
                         </li>
                         <li className={classes.headerItem}>
-                            <Link className={classes.anchor} to="scrollTo--contact" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>CONTACT</Link>
+                            <Link className={classes.anchor} to="scrollTo--contact" href="scrollTo--contact" spy={true} smooth={true} duration={500} offset={-56} onClick={this.closeHamburger}>CONTACT</Link>
                         </li>
                     </ul>
                     <div className={classes.resumeItemWrapper}>
-                        <button className={classes.resumeItem}>
+                        <a className={classes.resumeItem} href="/resume" target="_blank" rel="noopener noreferrer">
                             RESUME
-                        </button>
+                        </a>
                     </div>
                 </nav>
             </header>

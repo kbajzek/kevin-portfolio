@@ -24,6 +24,7 @@ class Skills extends Component {
                             <li>Node.js</li>
                             <li>Express</li>
                             <li>Flutter</li>
+                            <li>Socket.io</li>
                         </ul>
                     </div>
                     <div className={classes.skillsSection}>
@@ -35,6 +36,7 @@ class Skills extends Component {
                             <li>HTML5 & CSS3</li>
                             <li>MySQL</li>
                             <li>Git</li>
+                            <li>Dart</li>
                             <li>Lua</li>
                         </ul>
                     </div>

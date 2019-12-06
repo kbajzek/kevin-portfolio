@@ -35,6 +35,7 @@
 }
 
 .anchor {
+    color: inherit;
     display: block;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -89,6 +90,7 @@
     height: 30px;
     width: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .hamburger {
