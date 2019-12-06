@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.use("/resume", express.static(path.join(__dirname, 'client', 'public', 'Kevin Bajzek Resume.pdf')));
+app.use("/resume", express.static(path.join(__dirname, 'client', 'public', 'KevinBajzekResume.pdf')));
 
 let port = 5000;
 
