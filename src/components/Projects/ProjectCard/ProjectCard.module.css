@@ -1,0 +1,92 @@
+.image { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.cardName {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.cardDescription {
+    font-size: 1.2rem;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.cardLinks {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.anchor {
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.cardContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.imageContainer { 
+    margin: 3rem 2rem;
+    height: min-content;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+
+    .imageContainer { 
+        margin: 1rem 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .cardDescription {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 657px) {
+
+    .cardContent {
+        position: relative;
+        min-height: 260px;
+        z-index: 2000;
+    }
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: top left;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .imageContainer { 
+        margin: 1rem 1rem;
+    }
+
+    .cardDescription {
+        font-size: .9rem;
+    }
+}

@@ -14,6 +14,7 @@ class Header extends Component {
             <div
                 style={{
                     position: 'fixed',
+                    zIndex: 3000,
                     top: 0,
                     left: 0,
                     width: "100%",
