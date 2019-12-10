@@ -15,7 +15,7 @@ class Welcome extends Component {
 
     render() {
         return (
-            <div className={classes.page} style={{height: `calc(${this.state.height}${this.state.type} - 3rem)`}}>
+            <div className={classes.page} style={{height: `calc(${this.state.height}${this.state.type} - 1rem)`}}>
                 <div className={classes.text}>Hi, I'm <span className={classes.textEmphasized}>Kevin Bajzek</span>.</div>
                 <div className={classes.text}>I'm a full-stack engineer.</div>
             </div>
