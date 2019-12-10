@@ -10,7 +10,6 @@ class Welcome extends Component {
 
     componentDidMount(){
         const innerHeight = window.innerHeight;
-        console.log(innerHeight);
         this.setState({height: innerHeight, type: 'px'});
     }
 
