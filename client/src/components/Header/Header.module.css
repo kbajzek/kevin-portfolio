@@ -9,9 +9,15 @@
     box-shadow: 0px 10px 30px -10px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 2rem;
     box-sizing: border-box;
+}
+
+.headerName {
+    color: #86c232;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .headerItems {
@@ -48,7 +54,7 @@
                     
 .headerItem {
     height: 100%;
-    color: #abaeb0;
+    color: #cbced0;
     font-weight: 500;
     list-style: none;
     display: flex;

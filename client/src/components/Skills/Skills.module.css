@@ -28,7 +28,7 @@
 }
 
 .info {
-    color: #abaeb0;
+    color: #E8E8E9;
     font-size: 1.2rem;
     margin-top: 2rem;
     max-width: 70rem;
@@ -47,13 +47,13 @@
 }
 
 .skillsHeader {
-    color: #ffffff;
+    color: #E8E8E9;
     font-size: 1.6rem;
     font-weight: 500;
 }
 
 .skillsList {
-    color: #abaeb0;
+    color: #E8E8E9;
     font-size: 1.2rem;
 }
 
