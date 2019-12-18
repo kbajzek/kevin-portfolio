@@ -42,6 +42,7 @@ class Header extends Component {
     render() {
         return (
             <header className={classes.header}>
+                <div className={classes.headerName}>KEVIN BAJZEK</div>
                 <div className={this.state.hamburgerClicked ? classes.backgroundBlur : classes.noBackgroundBlur} onClick={this.closeHamburger}></div>
                 <div className={classes.hamburgerWrapper} onClick={this.clickHamburger}>
                     <div className={this.state.hamburgerClicked ? classes.hamburgerActive : classes.hamburger}></div>

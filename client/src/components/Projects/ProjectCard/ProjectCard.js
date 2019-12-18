@@ -5,7 +5,7 @@ class ProjectCard extends Component {
     render() {
         return (
                 <div className={classes.imageContainer}>
-                    <img className={classes.image} src={this.props.image} alt="Video Streaming Service" />
+                    <img className={classes.image} src={this.props.image} alt={this.props.name} />
                     <div className={classes.cardContent}>
                         <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer" className={classes.cardName}>{this.props.name}</a>
                         <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer" className={classes.cardDescription}>{this.props.description}</a>

@@ -11,7 +11,7 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <div style={{marginTop: '3.5rem'}}>
+                <div style={{marginTop: '1rem'}}>
                   <Welcome />
                   <About />
                   <Skills />
