@@ -7,8 +7,8 @@ class ProjectCard extends Component {
                 <div className={classes.imageContainer}>
                     <img className={classes.image} src={this.props.image} alt="Video Streaming Service" />
                     <div className={classes.cardContent}>
-                        <div className={classes.cardName}>{this.props.name}</div>
-                        <div className={classes.cardDescription}>{this.props.description}</div>
+                        <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer" className={classes.cardName}>{this.props.name}</a>
+                        <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer" className={classes.cardDescription}>{this.props.description}</a>
                         <div className={classes.cardLinks}>
                             <a href={this.props.githubLink} target="_blank" rel="noopener noreferrer" className={classes.anchor}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
